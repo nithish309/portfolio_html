@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Nithish Kumar | Web Developer</title>
+    <script>
+      
+         function downloadResume() {
+            const link = document.createElement('a');
+            link.href = './images/resume2.pdf';
+            link.download = './images/resume2.pdf';
+            link.click();
+         }
+         document.addEventListener("DOMContentLoaded", function() {
+          const spans = document.querySelectorAll('.webani');
+          spans.forEach((span, index) => {
+            span.style.animationDelay = `${index * 0.3}s`;
+          });
+        });
+    </script>
+  </head>
+  <body>
+    <header class="header vh-100 text-center position-relative">
+      <div
+        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h5 class="text-primary fs-3 fw-bold text-uppercase">Hello, Guys.</h5>
+        <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
+
+        <p class="roles text-uppercase fs-4">
+          <span class="webani text-primary">W</span>
+          <span class="webani text-white">e</span>
+          <span class="webani text-primary">b</span>
+          <span class="webani"> </span>
+          <span class="webani text-white">D</span>
+          <span class="webani text-primary">e</span>
+          <span class="webani text-white">v</span>
+          <span class="webani text-primary">e</span>
+          <span class="webani text-white">l</span>
+          <span class="webani text-primary">o</span>
+          <span class="webani text-white">p</span>
+          <span class="webani text-primary">e</span>
+          <span class="webani text-white">r</span>
+        </p>
+
+        <a href="#about" class="btn btn-outline-light btn-lg mt-3">
+          <div class="d-flex">
+            <div class="me-3">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="text-start">
+              <span>More About Me</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="social d-flex gap-3 position-absolute">
+          <a href="https://www.linkedin.com/in/nithish-chinnasamy-77984330b/" target="_blank">
+            <i class="fab fa-linkedin fa-3x text-white"></i>
+          </a>
+          <a href="https://github.com/nithish309" target="_blank">
+            <i class="fab fa-github fa-3x text-white"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Let me introduce myself</h2>
+        </div>
+        <div class="about-content d-flex gap-5 align-items-center h-100">
+          <img
+            src="images/20230323_212103-01-01.jpeg"
+            alt=""
+            class="about-img img-fluid rounded-circle"
+          />
+          <p class="lead">
+            I am Nithish Kumar C, and currently doing a Fullstack Development course at KGM, coimbatore. I
+            graduated with a BSc in computer systems and design from Kongu Engineering College, Perundurai.   
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile & Skills -->
+    <section class="profile my-6">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-5">
+                  <h3 class="text-uppercase fw-bold">Profile</h3>
+                  <p>Here is some more info about myself</p>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item mb-3">
+                          <h5 class="text-transform"><i class="fas fa-user text-primary"></i> Full Name:</h5>
+                          <p>Nithish Kumar C</p>
+                      </li>
+                      <li class="list-group-item mb-3">
+                          <h5 class="text-transform"><i class="fas fa-calendar text-primary"></i> Birth Date:</h5>
+                          <p>September 30, 2003</p>
+                      </li>
+                      <li class="list-group-item mb-3">
+                          <h5 class="text-transform"><i class="fas fa-envelope text-primary"></i> Email:</h5>
+                          <p>nithishchinnasamy91@gmail.com</p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <div class="row">
+                      <div class="col-md-8">
+                          <h3 class="text-uppercase fw-bold">Skills</h3>
+                          <p>Here is a list of my skills</p>
+                          <h5><i class="fas fa-check"></i> HTML</h5><br>
+                          <h5><i class="fas fa-check"></i> CSS</h5><br>
+                          <h5><i class="fas fa-check"></i> JavaScript</h5><br>
+                          <h5><i class="fas fa-check"></i> Bootstrap</h5><br>
+                          <h5><i class="fas fa-check"></i> React</h5><br>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                <h3 class="text-uppercase fw-bold">Education</h3>
+                <p>Here is a my education</p>
+                <h5><i class="fas fa-graduation-cap"></i> 2024 - FSD(Course)</h5><br><br>
+                <h5><i class="fas fa-graduation-cap"></i> 2021 - 2024 - UG</h5><br><br>
+                <h5><i class="fas fa-graduation-cap"></i> 2020 - 2021 - HSC</h5><br><br>
+                <h5><i class="fas fa-graduation-cap"></i> 2018 - 2019 - SSLC</h5>
+            </div>
+          </div>
+          <div class="row mt-5 text-center">
+              <div class="col-12">
+                  <a href="#contact-form" class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2">Hire Me Now</a>
+                  <a onclick="downloadResume()" class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2">Download CV</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- Portfolio -->
+    <section class="portfolio py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">Portfolio</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Check Out My Work</h2>
+          <p class="lead">Here is a small sample of my projects.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-3 bg-light">
+              <a
+                href="images/project4.png"
+                data-lightbox="images"
+                data-title="quiz game"
+              >
+                <img
+                  src="images/project4.png" 
+                  alt=""
+                  class="img-fluid bder"
+                />
+              </a>
+              <div class="project-info bder1" style="background-color: #ffffff;">
+                <a href="https://subtle-daifuku-22a971.netlify.app/" style="text-decoration: none;" target="_blank"><p class="text-center text-dark">>></p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-3 bg-light">
+              <a
+                href="images/project2.png"
+                data-lightbox="images"
+                data-title="photography Page"
+              >
+                <img
+                  src="images/project2.png" 
+                  alt=""
+                  class="img-fluid bder"
+                />
+              </a>
+              <div class="project-info bder1" style="background-color: #ffffff;">
+                <a href="https://brilliant-monstera-98427a.netlify.app/" style="text-decoration: none;" target="_blank"><p class="text-center text-dark">>></p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-3 bg-light">
+              <a
+                href="images/project3.png"
+                data-lightbox="images"
+                data-title="rock paper scissor"
+              >
+                <img
+                  src="images/project3.png" 
+                  alt=""
+                  class="img-fluid bder"
+                />
+              </a>
+              <div class="project-info bder1" style="background-color: #ffffff;">
+                <a href="https://stellular-biscotti-551103.netlify.app/" style="text-decoration: none;" target="_blank"><p class="text-center text-dark">>></p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-3 bg-black">
+              <a
+                href="images/project1.png"
+                data-lightbox="images"
+                data-title="BMW Landing Page"
+                
+              >
+                <img
+                  src="images/project1.png" 
+                  alt=""
+                  class="img-fluid rounded-3"
+                 
+                />
+              </a>
+              <div class="project-info">
+                <a href="https://silver-brioche-60ff9a.netlify.app/" style="text-decoration: none;" target="_blank"><p class="text-center text-light">>></p></a>
+              </div>
+            </div>
+          </div>
+         
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-3 bg-light">
+              <a
+                href="images/project5.png"
+                data-lightbox="images"
+                data-title="card generator"
+              >
+                <img
+                  src="images/project5.png" 
+                  alt=""
+                  class="img-fluid bder"
+                />
+              </a>
+              <div class="project-info bder1" style="background-color: #ffffff;">
+                <a href="https://graceful-platypus-d8c0a1.netlify.app/" style="text-decoration: none;" target="_blank"><p class="text-center text-dark">>></p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-3 bg-light">
+              <a
+                href="images/project6.png"
+                data-lightbox="images"
+                data-title="blog"
+              >
+                <img
+                  src="images/project6.png" 
+                  alt=""
+                  class="img-fluid bder"
+                />
+              </a>
+              <div class="project-info bder1" style="background-color: #ffffff;">
+                <a href="https://dapper-kelpie-293132.netlify.app/" style="text-decoration: none;" target="_blank"><p class="text-center text-dark">>></p></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+   
+    <section class="contact text-bg-dark bg-gradient py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="text-center mb-5">
+              <h4 class="text-uppercase fw-bold text-primary">Contact</h4>
+              <hr class="w-25 mx-auto" />
+              <h2 class="mb-4">I'd love to hear from you.</h2>
+              <p class="lead">
+                If you have any questions or would like to work together, please
+                contact me with the form below.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <form id="contact-form">
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  id="contactName"
+                  name="user_name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  id="contactEmail"
+                  name="user_email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-5">
+                <textarea
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  id="contactProject"
+                  name="user_project"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <p class="contact__message" id="contact-message"></p>
+              <div class="mb-5 d-grid">
+                <button type="submit" class="btn btn-primary" id="contact-button">Submit</button>
+              </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
