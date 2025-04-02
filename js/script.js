@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // contactMessage.classList.add('color-red');
       contactMessage.textContent = 'Please fill out all the fields 📩';
     } else {
-      emailjs.sendForm('service_gzi0mnc', 'template_l00b7ei', '#contact-form', 'Bd9DrMKN3xYbRF1lK')
+      emailjs.sendForm('service_gzi0mnc', 'template_l00b7ei', '#contact-form', 'BRv2FBMqGdFiszEng')
         .then((response) => {
           // contactMessage.classList.remove('color-red');
           // contactMessage.classList.add('color-blue');
